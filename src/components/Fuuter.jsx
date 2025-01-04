@@ -27,7 +27,7 @@ const Fuuter = () => {
     <footer className={`${darkMode ? 'dark bg-black' : 'light bg-gray-800'} w-full m-auto lg:px-20 px-10 py-20 grid lg:grid-cols-3 grid-cols-1 justify-center items-start lg:gap-20 gap-10`}>
       <div className="flex flex-col justify-center items-start gap-5">
         <h1 className='text-white text-2xl font-semibold'>About Us</h1>
-        <p className='text-slate-200 text-justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nostrum sunt quidem aut hic delectus sit earum repudiandae. Voluptatem, ratione?</p>
+        <p className='text-slate-200 text-justify'>Lorem dhfzdufdjjddh ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nostrum sunt quidem aut hic delectus sit earum repudiandae. Voluptatem, ratione?</p>
         <div id='social-icons' className="flex justify-center items-center gap-4 mt-4">
           <div className="p-3 rounded-xl bg-white hover:bg-red-600 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300">
             <FaFacebook className='size-5'/>
