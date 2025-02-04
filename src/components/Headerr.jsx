@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import { FaXmark, FaBars } from 'react-icons/fa6'
 import logo from '../assets/images/logo.png'
 import { useDarkMode } from './DarkModeContext'
-// import { FaPhoneAlt, FaUseCircle } from 'react-icons/fa'
+import { FaPhoneAlt, FaUserCircle, } from 'react-icons/fa'
 
 const Headerr = () => {
 
@@ -12,7 +12,7 @@ const Headerr = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(false);
+    setIsMenuOpen(!isMenuOpen);
   }
 
   const closeMenu = () => {
@@ -41,7 +41,7 @@ const Headerr = () => {
   ]
 
   return (
-  <nav className={`${darkMode ? 'dark bg-black' : 'light bg-[#f3f3f3]'} flex justify-between items-center gap-4 lg:px-20 px-4 py-3 sticky top-0 z-30`}>
+    <nav className={`${darkMode ? 'dark bg-black' : 'light bg-[#f3f3f3]'} flex justify-between items-center gap-4 lg:px-20 px-4 py-3 sticky top-0 z-30`}>
       <div id='logo'>
         <img src={logo} alt="company logo" className='lg:w-[150px] w-[120px] dark:invert' />
       </div>
@@ -51,6 +51,10 @@ const Headerr = () => {
           <Link key={path} className='text-black text-[15px] uppercase font-semibold cursor-pointer px-3 py-2 dark:text-white rounded-lg hover:bg-red-600 hover:text-white' to={path} spy={true} offset={-100} smooth={true}>{link}</Link>
         ))}
       </ul>
+
+
+      {/* Smaller screen menu  */}
+
 
       <div className="flex justify-center items-center lg:hidden" onClick={toggleMenu}>
         <div>
@@ -65,9 +69,19 @@ const Headerr = () => {
           ))}
         </ul>
       </div>
+
+
+      <div className="flex justify-center item-center lg:gap-8 gap-2">
+        <div className="flex justify-center items-center lg:gap-3 gap-1">
+          <FaPhoneAlt className='size-5 text-red-600' />
+          <h1 className='lg:text-xl text-sm text-black dark:text-white font-semibold'>23481 576 576</h1>
+        </div>
+
+        <FaUserCircle className='size-6 text-red-600' />
+      </div>
     </nav>
   )
-  
+
 }
 
 export default Headerr

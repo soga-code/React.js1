@@ -29,8 +29,8 @@ const Contact = () => {
         </div>
         <div className="flex flex-col justify-center items-start gap-8 lg:p-20 p-6">
           <h1 data-aos='zoom-in' data-aos-delay='200' className='text-red-500 dark:text-white'>REACH US</h1>
-          <h1 data-aos="zoom-in" data-aos-delay="400" className='text-black text-[40px] text-semibold leading-10 dark:text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, earum!</h1>
-          <p data-aos="zoom-in" data-aos-delay="800" className='text-xl text-gray-600 text-justify dark:text-white'>Soga ipsum dolor sit, amet consectetur adipisicing elit. Maxime atque non possimus quasi veritatis eius repellat quaerat. Quisquam, molestiae dolorum. veritatis eius repellat quaerat.</p>
+          <h1 data-aos="zoom-in" data-aos-delay="400" className='text-black text-[40px] text-semibold leading-10 dark:text-black'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, earum!</h1>
+          <p data-aos="zoom-in" data-aos-delay="800" className='text-xl text-gray-600 text-justify dark:text-black'>Soga ipsum dolor sit, amet consectetur adipisicing elit. Maxime atque non possimus quasi veritatis eius repellat quaerat. Quisquam, molestiae dolorum. veritatis eius repellat quaerat.</p>
           <button className='bg-red-600 text-md px-8 py-3  text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer'>SEND EMAIL</button>
         </div>
       </section>
